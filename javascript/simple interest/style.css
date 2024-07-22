@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+.result{
+    width: 50%;
+    height: 10%;
+    border: 2px solid black;
+background-color: coral;
+padding: 10px 30px;
+margin-bottom: 20px;
+
+}
+button{
+    padding: 1.2vw 2vw;
+    background-color: rgb(60, 60, 219);
+    color: white;
+    border-radius: 20px;
+}

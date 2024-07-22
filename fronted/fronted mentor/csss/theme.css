@@ -1,0 +1,101 @@
+.btn{
+    background: transparent;
+    border:none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    &.primary{
+        background:var(--primary-color);
+        color:white;
+    }
+    
+    &.secondary{
+        background:var(--secondary-color);
+        color:white;
+    }
+
+    &.outline{
+        border:1px solid black;
+        color:black;
+    }
+}
+.bg-blue{
+    background: var(--primary-color);
+}
+
+
+.bold{
+    font-weight: bold;
+}
+.text-sm{
+    font-size: var(--font-sm);
+}
+
+.text-md{
+    font-size: 1.2rem;
+}
+
+.text-lg{
+    font-size: 1.44rem;
+}
+
+.text-lg{
+    font-size: 1.728rem;
+}
+
+.text-xl{
+    font-size: 2.074rem;
+}
+
+.text-2xl{
+    font-size: 2.488rem;
+}
+
+.text-2xl{
+    font-size: 2.986rem;
+}
+
+.text-primary{
+    color: var(--primary-color);
+}
+
+.text-white{
+    color: white;
+}
+.text-gray{
+    color: #737373;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+
+.bg-primary{
+    background: var(--primary-color);
+}
+.bg-black{
+    background: var(--secondary-color);
+}
+.bg-red{
+    background: var(--bg-red);
+}
+
+/* font-weight */
+
+.font-light{
+    font-weight: 300;
+}
+
+.font-regular{
+    font-weight: 400;
+}
+.font-bold{
+    font-weight: 700;
+}
+.italic{
+    font-style: italic;
+}
+.text-blue{
+    color: var(--primary-color);
+}
+.border-none{
+    border: none;
+}
