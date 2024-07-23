@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+<div class="container bg-gray-300 m-auto w-1/2   rounded-lg mt-4 ">
+    <div class="py-10 px-5">
+        <input type="text" id="title" class="w-32 bg-red-200 rounded-md outline-none  ">
+        <select name="" id="status" class="w-20 rounded-md bg-blue-200 text-gray-600">
+           <option value="incomplete " >Incomplete</option>
+           <option value="complete" >Complete</option>
+        
+        </select>
+        <button onclick="addItem()" class="px-4  rounded-md bg-green-400 text-gray-200">add</button>
+    </div>
+    <div class="output overscroll-auto ml-7  ">
+
+    </div>
+
+</div>
+
+       
+
+    <script src="script.js"></script>
+</body>
+</html>
