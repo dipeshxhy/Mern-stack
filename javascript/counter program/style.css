@@ -1,0 +1,32 @@
+.container{
+    width: 60%;
+    height: 70vh;
+    margin: 0 auto;
+    background: hsl(101, 81%, 66%);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+
+#counterNum{
+    text-align: center;
+    font-size: 4.2em;
+    font-family: helvetica;
+}
+.btnContainer{
+   text-align: center;
+   
+}
+.button{
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: hsla(221, 88%, 66%, 0.911);
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    &:hover{
+        background-color: hsla(221, 88%, 56%, 0.911); ;
+    }
+}
