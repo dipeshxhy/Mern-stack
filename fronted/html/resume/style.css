@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    
+    
+}
+nav{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid gray;
+    padding: 0.5% 5%;
+    .logo{
+        font-size: 2vw;
+        font-weight: bolder;
+    }
+    .nav-items{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+        .nav-item{
+            display: flex;
+            &:hover{
+                font-weight: bold;
+                cursor: pointer;
+            }
+           
+        }
+    }
+    button{
+       padding: 0.2vw;
+margin-right: 0.2vw;
+border: none;
+outline: none;
+cursor: pointer;
+&.login{
+    background-color: rgb(110, 110, 246);
+    color: white;
+    border: 1px solid black;
+}
+
+&.login:hover{
+    background-color: white;
+    color: rgb(110, 110, 246);
+}
+&.signup{
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    
+}
+
+&.signup:hover{
+    background-color: white;
+    color: rgb(110, 110, 246);
+}
+
+    }
+}
+
+  main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .left{
+        width: 50%;
+        height: 90vh;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        /* align-items: center;  */
+        justify-content: center;
+        gap: 2vw;
+        &.description{
+            /* width: 40%; */
+            margin-left: 4vw;
+            display: flex;
+            h1{
+                font-size: 5vw;
+                line-height: 5vw;
+                color:rgb(42, 42, 141) ;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            h2{
+                font-size: 2vw;
+                color: rgb(236, 185, 90);
+            }
+            i{
+                font-size: 4.3vw;
+                color: #F66002;
+            }
+        }
+    }
+    .right{
+        width: 50%;
+        height: 90vh;
+        /* background-color: blue; */
+        background-image: url("https://images.unsplash.com/photo-1719279304943-8aa5ab1552ab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDY3fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D");
+        background-position: center;
+        background-size: cover;
+    }
+  }
