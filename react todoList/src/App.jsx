@@ -1,48 +1,13 @@
-import React, { useState } from 'react'
-import { IoAddCircle } from "react-icons/io5";
-import { AiFillDelete } from "react-icons/ai";
-
+import React from 'react'
+import TodoList from './components/TodoList'
+import Todoitem from './components/TodoItem'
 
 const App = () => {
-  const [toDoItems,setToDoItems]=useState([])
-const handleChange=(event)=>{
-  // console.log(event.terget.name,event.target.value)
-  setToDoItem(
-    {
-  
-      ...toDoItem,
-      [event.target.name]:event.target.value,
-    }
-   
-  )
-};
-const [toDoItem,setToDoItem]=useState({
-  title:'',
-})
-const submit=(event)=>{
-  event.preventDefault();
-  setToDoItems([...toDoItems,toDoItem])
-  setToDoItem({title:''})
-  
-};
   return (
-    <div className='flex flex-col justify-center items-center w-80 m-auto mt-6 '>
-     
-      <div className='w-64 h-20 rounded bg-blue-200 flex flex-col justify-center items-center '>
-      <h1 className='font-bold mt-[-10%]'>ToDo List</h1>
-        <form action="" onSubmit={submit}>
-
-<input className='border text-blue-400 rounded outline-none' type="text" name="title" onChange={handleChange} value={toDoItem.title} placeholder='Enter your task...' />
-<button  onClick={submit} className='px-3 py-1   text-orange-400 rounded-lg font-bold'><IoAddCircle /></button>
-        </form>
-
-      </div>
-<div className='bg-orange-300 w-64 rounded p-3 text-white '>
-  {toDoItems.map((item)=>(
-    <div >{item.title}  </div>
-  ))}
- 
-</div>
+    <div className='w-full h-screen bg-zinc-300 py-[5%]  '>
+      {/* <TodoList /> */}
+      <Todoitem/>
+    
     </div>
   )
 }
